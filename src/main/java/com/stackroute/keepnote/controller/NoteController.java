@@ -83,6 +83,7 @@ public class NoteController {
 		}
 //		List<Note> list = noteRepository.getAllNotes();
 		modalMap.addAttribute("list",noteRepository.getAllNotes());
+		System.out.println(noteRepository.getAllNotes().toString());
 
 		return "index";
 	}
